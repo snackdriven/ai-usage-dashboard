@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-28T09:30:17.693143-05:00",
-  "generated_at_epoch": 1793197817,
+  "generated_at": "2026-10-28T09:32:52.360332-05:00",
+  "generated_at_epoch": 1793197972,
   "account": "snackdriven",
   "days_7d": [
     "2026-10-22",
@@ -41,8 +41,8 @@
           "label": "7-Day Weekly Cap (All Models)",
           "used_percent": 77.0,
           "remaining_percent": 23.0,
-          "resets_at": "2026-10-31T17:00:00.320634+00:00",
-          "resets_at_epoch": 1793466000.320634,
+          "resets_at": "2026-10-31T16:59:59.955041+00:00",
+          "resets_at_epoch": 1793465999.955041,
           "window_seconds": 604800,
           "pace": {
             "elapsed_percent": 55.7,
@@ -50,8 +50,8 @@
             "pace_ratio": 1.38,
             "status": "hot",
             "projected_end_pct": 138.3,
-            "exhausts_in_seconds": 100548,
-            "remaining_seconds": 268182
+            "exhausts_in_seconds": 100594,
+            "remaining_seconds": 268027
           }
         },
         "scoped_fable": {
@@ -68,7 +68,7 @@
             "status": "on_track",
             "projected_end_pct": 0.0,
             "exhausts_in_seconds": null,
-            "remaining_seconds": 268181
+            "remaining_seconds": 268027
           }
         }
       },
@@ -148,8 +148,8 @@
           "seven_day_pct": 77
         },
         {
-          "ts": 1793197818,
-          "iso": "2026-10-28T14:30:18.082064+00:00",
+          "ts": 1793197972,
+          "iso": "2026-10-28T14:32:52.702771+00:00",
           "five_hour_pct": 0.0,
           "seven_day_pct": 77.0
         }
@@ -182,7 +182,7 @@
             "status": "on_track",
             "projected_end_pct": 0.0,
             "exhausts_in_seconds": null,
-            "remaining_seconds": 588628
+            "remaining_seconds": 588474
           }
         }
       },
@@ -534,31 +534,6 @@
       "status": "ok",
       "error": null,
       "windows": {
-        "gemini_pool": {
-          "label": "5-Hour Gemini Pool (Argon / Flash)",
-          "used_percent": 1.7,
-          "remaining_percent": 98.3,
-          "resets_at": "2026-10-28T19:23:34Z",
-          "resets_at_epoch": 1793215414.0,
-          "window_seconds": 18000,
-          "pace": {
-            "elapsed_percent": 2.3,
-            "pace_delta": -0.6,
-            "pace_ratio": 0.75,
-            "status": "on_track",
-            "projected_end_pct": 74.9,
-            "exhausts_in_seconds": 23618,
-            "remaining_seconds": 17591
-          },
-          "models": [
-            "Gemini 3.8 Flash (Medium)",
-            "Gemini 4 Argon (Medium)",
-            "Gemini 4 Argon (High)",
-            "Gemini 3.8 Flash (High)",
-            "Gemini 3.8 Flash (Low)",
-            "Gemini 4 Argon (Low)"
-          ]
-        },
         "claude_gpt_pool": {
           "label": "5-Hour Claude & GPT-OSS Pool",
           "used_percent": 0.0,
@@ -567,63 +542,67 @@
           "resets_at_epoch": 1793215714.0,
           "window_seconds": 18000,
           "pace": {
-            "elapsed_percent": 0.6,
-            "pace_delta": -0.6,
+            "elapsed_percent": 1.5,
+            "pace_delta": -1.5,
             "pace_ratio": null,
             "status": "on_track",
             "projected_end_pct": 0.0,
             "exhausts_in_seconds": null,
-            "remaining_seconds": 17891
+            "remaining_seconds": 17737
           },
           "models": [
+            "Claude Opus 5.5 (Medium)",
+            "GPT-OSS 120B (Medium)",
             "Claude Opus 5.5 (Low)",
+            "Claude Opus 5.5 (High)",
             "Claude Sonnet 5.5 (Low)",
             "Claude Sonnet 5.5 (Medium)",
-            "Claude Opus 5.5 (Medium)",
-            "Claude Opus 5.5 (High)",
-            "Claude Sonnet 5.5 (High)",
-            "GPT-OSS 120B (Medium)"
+            "Claude Sonnet 5.5 (High)"
+          ]
+        },
+        "gemini_pool": {
+          "label": "5-Hour Gemini Pool (Argon / Flash)",
+          "used_percent": 1.7,
+          "remaining_percent": 98.3,
+          "resets_at": "2026-10-28T19:23:34Z",
+          "resets_at_epoch": 1793215414.0,
+          "window_seconds": 18000,
+          "pace": {
+            "elapsed_percent": 3.1,
+            "pace_delta": -1.4,
+            "pace_ratio": 0.54,
+            "status": "on_track",
+            "projected_end_pct": 54.4,
+            "exhausts_in_seconds": 32518,
+            "remaining_seconds": 17437
+          },
+          "models": [
+            "Gemini 4 Argon (Low)",
+            "Gemini 3.8 Flash (High)",
+            "Gemini 3.8 Flash (Low)",
+            "Gemini 4 Argon (Medium)",
+            "Gemini 4 Argon (High)",
+            "Gemini 3.8 Flash (Medium)"
           ]
         }
       },
       "model_quotas": [
         {
-          "label": "Gemini 3.8 Flash (Medium)",
-          "used_percent": 1.7,
-          "remaining_percent": 98.3,
-          "reset_time": "2026-10-28T19:23:34Z",
-          "reset_epoch": 1793215414.0
-        },
-        {
-          "label": "Claude Opus 5.5 (Low)",
+          "label": "Claude Opus 5.5 (Medium)",
           "used_percent": 0.0,
           "remaining_percent": 100.0,
           "reset_time": "2026-10-28T19:28:34Z",
           "reset_epoch": 1793215714.0
         },
         {
-          "label": "Claude Sonnet 5.5 (Low)",
+          "label": "GPT-OSS 120B (Medium)",
           "used_percent": 0.0,
           "remaining_percent": 100.0,
           "reset_time": "2026-10-28T19:28:34Z",
           "reset_epoch": 1793215714.0
         },
         {
-          "label": "Claude Sonnet 5.5 (Medium)",
-          "used_percent": 0.0,
-          "remaining_percent": 100.0,
-          "reset_time": "2026-10-28T19:28:34Z",
-          "reset_epoch": 1793215714.0
-        },
-        {
-          "label": "Gemini 4 Argon (Medium)",
-          "used_percent": 1.7,
-          "remaining_percent": 98.3,
-          "reset_time": "2026-10-28T19:23:34Z",
-          "reset_epoch": 1793215414.0
-        },
-        {
-          "label": "Gemini 4 Argon (High)",
+          "label": "Gemini 4 Argon (Low)",
           "used_percent": 1.7,
           "remaining_percent": 98.3,
           "reset_time": "2026-10-28T19:23:34Z",
@@ -644,7 +623,7 @@
           "reset_epoch": 1793215414.0
         },
         {
-          "label": "Claude Opus 5.5 (Medium)",
+          "label": "Claude Opus 5.5 (Low)",
           "used_percent": 0.0,
           "remaining_percent": 100.0,
           "reset_time": "2026-10-28T19:28:34Z",
@@ -658,6 +637,20 @@
           "reset_epoch": 1793215714.0
         },
         {
+          "label": "Claude Sonnet 5.5 (Low)",
+          "used_percent": 0.0,
+          "remaining_percent": 100.0,
+          "reset_time": "2026-10-28T19:28:34Z",
+          "reset_epoch": 1793215714.0
+        },
+        {
+          "label": "Claude Sonnet 5.5 (Medium)",
+          "used_percent": 0.0,
+          "remaining_percent": 100.0,
+          "reset_time": "2026-10-28T19:28:34Z",
+          "reset_epoch": 1793215714.0
+        },
+        {
           "label": "Claude Sonnet 5.5 (High)",
           "used_percent": 0.0,
           "remaining_percent": 100.0,
@@ -665,14 +658,21 @@
           "reset_epoch": 1793215714.0
         },
         {
-          "label": "GPT-OSS 120B (Medium)",
-          "used_percent": 0.0,
-          "remaining_percent": 100.0,
-          "reset_time": "2026-10-28T19:28:34Z",
-          "reset_epoch": 1793215714.0
+          "label": "Gemini 4 Argon (Medium)",
+          "used_percent": 1.7,
+          "remaining_percent": 98.3,
+          "reset_time": "2026-10-28T19:23:34Z",
+          "reset_epoch": 1793215414.0
         },
         {
-          "label": "Gemini 4 Argon (Low)",
+          "label": "Gemini 4 Argon (High)",
+          "used_percent": 1.7,
+          "remaining_percent": 98.3,
+          "reset_time": "2026-10-28T19:23:34Z",
+          "reset_epoch": 1793215414.0
+        },
+        {
+          "label": "Gemini 3.8 Flash (Medium)",
           "used_percent": 1.7,
           "remaining_percent": 98.3,
           "reset_time": "2026-10-28T19:23:34Z",
@@ -688,10 +688,10 @@
       "scale_7d": {
         "conversations_active": 90,
         "user_prompts": 163,
-        "planner_steps": 2863,
-        "tool_calls": 4263,
+        "planner_steps": 2876,
+        "tool_calls": 4275,
         "daily_steps": {
-          "2026-10-28": 1762,
+          "2026-10-28": 1775,
           "2026-10-27": 873,
           "2026-10-21": 228
         }

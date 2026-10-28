@@ -177,7 +177,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     document.querySelectorAll(".nav-pill").forEach(el => {
       el.addEventListener("click", (ev) => {
         const targetPage = el.getAttribute("data-nav");
-        const isHostedMultiPage = window.location.hostname.includes("snackdriven.com") || window.location.port === "8787";
+        const isHostedMultiPage = window.location.hostname.includes("snackdriven.com") || window.location.hostname.includes("github.io") || window.location.port === "8787";
         if (!isHostedMultiPage && targetPage) {
           ev.preventDefault();
           PAGE_KEY = targetPage;
